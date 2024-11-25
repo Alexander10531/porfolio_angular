@@ -5,6 +5,6 @@ export const routes : Routes = [
 	{
 		path : "", 
         component : AppComponent,
-        //loadChildren : () => import("./modules/petwebsite/petwebsite.module").then(mod => mod.PetwebsiteModule)
+        loadChildren : () => import("./modules/landing-page/landing-page.module").then(mod => mod.LandingPageModule)
     }
 ]; 
