@@ -34,4 +34,11 @@
 
 .iniciar-sesion{
     width: 50%;
+    border: 0px;
+    padding: 10px 5px;
+    color: white;
+    box-shadow: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: purple;
 }
