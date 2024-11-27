@@ -11,7 +11,8 @@ export class LoginComponent {
   days : string = "00"; 
   hours : string = "00"; 
   minutes : string = "00"; 
-  seconds : string = "00"; 
+  seconds : string = "00";
+  showRiddle : boolean = true; 
   countDownDate : number = new Date("Dec 2, 2024 00:00:00").getTime();
 
   constructor(){
@@ -38,6 +39,10 @@ export class LoginComponent {
 
   public formatTime(fecha : string) : string{
     return fecha.length == 1 ? `0${fecha}` : fecha;   
+  }
+
+  showRiddleFunction(){
+    this.showRiddle = false; 
   }
 
 }

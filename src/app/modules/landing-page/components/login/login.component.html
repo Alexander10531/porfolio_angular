@@ -1,11 +1,26 @@
 <div>
-    <div class="contenedor-login">
-        <div class="contenedor-polaroid">
-            <img class="imagen-credenciales" src="assets/imagen_login.jpg" alt="">
-            <div class="contenedor-countdown">           
-                <span>{{ days }} Dias {{ hours }} Horas {{ minutes }} Minutos {{ seconds }} Segundos</span>
+    <div class="contenedor-principal">
+        <div *ngIf="showRiddle" class="slice slice-1">
+            <div class="contenedor-polaroid">
+                <img class="imagen-credenciales" src="assets/imagen_login.jpg" alt="">
+                <div  class="contenedor-countdown">           
+                    <span>{{ days }} Dias {{ hours }} Horas {{ minutes }} Minutos {{ seconds }} Segundos</span>
+                    <button (click)="showRiddleFunction()" class="iniciar-sesion">Empecemos</button>
+                </div>
             </div>
-            <button class="iniciar-sesion">Empecemos</button>
+        </div>
+        <div *ngIf="!showRiddle" class="slice slice-2">
+            <div class="riddle riddle-1">
+                En el mapa me hallarás sin error,si me tienes, soy sabor.Cuídame bien en la mesa, o seré un dolor de cabeza.
+            </div>
+            <div class="riddle riddle-2">
+                Proximamente
+                <div class="inactive-container"></div>
+            </div>
+            <div class="riddle riddle-3">
+                Proximamente
+                <div class="inactive-container"></div>
+            </div>
         </div>
     </div>
 </div>

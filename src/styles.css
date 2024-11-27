@@ -1,8 +1,11 @@
-* {
-    
+body{
+        
     margin: 0px;
     padding: 0px;
+    
+}
 
+* {
     --color-primary : #7B2CBF;
     --color-secondary: #6F28AC; 
     
