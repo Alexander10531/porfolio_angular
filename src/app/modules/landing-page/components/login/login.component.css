@@ -107,6 +107,16 @@
     background-color: #000000a3;
 }
 
+.riddle-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.riddle-2 div{
+    width: 100%;
+    padding: 5px 0px;
+}
+
 @keyframes riddle-animation{
     from {
         transform: scale(0);
